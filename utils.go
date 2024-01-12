@@ -9,3 +9,13 @@ func Contains(str string, slice []string) bool {
 
 	return false
 }
+
+func ContainsInt(digit int, slice []int) bool {
+	for _, v := range slice {
+		if v == digit {
+			return true
+		}
+	}
+
+	return false
+}
